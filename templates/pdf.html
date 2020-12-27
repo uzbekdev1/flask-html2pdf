@@ -1,0 +1,109 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<style>
+    .pgrid {
+    }
+
+    .pgrid .pgrid-row {
+    }
+
+    .pgrid .pgrid-row .pgrid-cell {
+        margin-top: 40px;
+    }
+
+    .pgrid .pgrid-row .pgrid-cell .col-auto {
+        margin-right: -40px;
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+{% for header in headers %}
+<div class="row pgrid-row">
+    {% for cell in cells %}
+    <div class="col pgrid-cell">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+<div class="row pgrid-row">
+    {% for footer in footers %}
+    <div class="col pgrid-cell">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+            <div class="col-auto">
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -5,13 +5,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'HTML to PDF Flask Api!'
+    return 'HTML to PDF!'
 
 
 @app.route('/html/<int:size>.pdf')
 def html(size):
     cols = 4
-    return render_template('test.html', headers=range(0, round(size / cols)), footers=range(0, size % cols),
+    return render_template('pdf.html', headers=range(0, round(size / cols)), footers=range(0, size % cols),
                            cells=range(0, cols))
 
 

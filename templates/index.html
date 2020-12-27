@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<main role="main" class="flex-shrink-0">
+    <div class="container">
+        <h2 class="mt-5"> HTML to PDF</h2>
+        <hr/>
+        <fieldset>
+            <legend>HTML</legend>
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <input type="number" class="form-control mb-2" id="size1" value="10" placeholder="Size of pyramids">
+                </div>
+                <div class="col-auto">
+                    <button type="button" onclick="window.open('/html/'+document.getElementById('size1').value,'_blank')"
+                            class="btn btn-primary mb-2">Generate
+                    </button>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>PDF</legend>
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <input type="number" class="form-control mb-2" id="size2" value="10" placeholder="Size of pyramids">
+                </div>
+                <div class="col-auto">
+                    <button type="button" onclick="window.open('/pdf/'+document.getElementById('size2').value,'_blank')"
+                            class="btn btn-primary mb-2">Generate
+                    </button>
+                </div>
+            </div>
+        </fieldset>
+
+    </div>
+</main>
+{% endblock %}
